@@ -1,22 +1,16 @@
 //
-//  LoginView.swift
+//  SignUpView.swift
 //  Personal Expense Tracker
 //
-//  Created by Ashmit Gupta on 2024-07-03.
-//
-
-//
-//  LoginView.swift
-//  Personal Expense Tracker
-//
-//  Created by Ashmit Gupta on 2024-07-03.
+//  Created by Ashmit Gupta on 2024-07-04.
 //
 
 import SwiftUI
 import UIKit
 
-struct LoginView: View {
+struct SignUpView: View {
     @State private var username: String = ""
+    @State private var email: String = ""
     @State private var password: String = ""
     @State private var showingAlert = false
     @State private var alertMessage = ""
@@ -26,22 +20,27 @@ struct LoginView: View {
         VStack {
             Spacer()
 
-            VStack(alignment: .center) {
-                Text("Personal Expense Tracker")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding(.bottom, 2)
-                    .multilineTextAlignment(.center)
-                    .padding(.bottom, 30)
-            }
-            .padding(.horizontal)
+            Text("Personal Expense Tracker")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding(.bottom, 40)
+                .multilineTextAlignment(.center)
 
             HStack {
-                TextField("Email", text: $username)
+                TextField("Username", text: $username)
                     .padding()
                     .background(Color(UIColor.secondarySystemBackground))
                     .cornerRadius(5.0)
             }
+            .padding(.horizontal)
+
+            HStack {
+                TextField("Email", text: $email)
+                    .padding()
+                    .background(Color(UIColor.secondarySystemBackground))
+                    .cornerRadius(5.0)
+            }
+            .padding(.horizontal)
 
             HStack {
                 SecureField("Password", text: $password)
@@ -49,24 +48,13 @@ struct LoginView: View {
                     .background(Color(UIColor.secondarySystemBackground))
                     .cornerRadius(5.0)
             }
+            .padding(.horizontal)
             .padding(.bottom, 10)
 
-            HStack {
-                Spacer()
-                Button(action: {
-                    // Forgot password action
-                }) {
-                    Text("Forgot?")
-                        .font(.footnote)
-                        .foregroundColor(.orange)
-                }
-                .padding(.horizontal)
-            }
-
             Button(action: {
-                authenticateUser()
+                registerUser()
             }) {
-                Text("LOGIN")
+                Text("SIGN UP")
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding()
@@ -82,13 +70,13 @@ struct LoginView: View {
             Spacer()
 
             HStack {
-                Text("Don’t have an account?")
+                Text("Already have an account?")
                     .font(.footnote)
                     .foregroundColor(.gray)
                 Button(action: {
-                    showSignUp = true
+                    showSignUp = false
                 }) {
-                    Text("Sign up")
+                    Text("Login")
                         .font(.footnote)
                         .foregroundColor(.orange)
                 }
@@ -98,18 +86,18 @@ struct LoginView: View {
         .padding()
     }
 
-    private func authenticateUser() {
-        if username.isEmpty || password.isEmpty {
-            alertMessage = "Please enter both username and password."
+    private func registerUser() {
+        if username.isEmpty || email.isEmpty || password.isEmpty {
+            alertMessage = "Please fill in all fields."
             showingAlert = true
         } else {
-            print("Authenticating user \(username)")
+            print("Registering user \(username) with email \(email)")
         }
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(showSignUp: .constant(false))
+        SignUpView(showSignUp: .constant(true))
     }
 }

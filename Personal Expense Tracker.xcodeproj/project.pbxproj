@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE27D2672C3793DD001FC9A1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27D2662C3793DD001FC9A1 /* SignUpView.swift */; };
+		FE27D2692C379533001FC9A1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27D2682C379533001FC9A1 /* MainView.swift */; };
 		FEDE01382C3664E0007DC7BA /* Personal_Expense_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDE01372C3664E0007DC7BA /* Personal_Expense_TrackerApp.swift */; };
 		FEDE013A2C3664E0007DC7BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDE01392C3664E0007DC7BA /* ContentView.swift */; };
 		FEDE013C2C3664E1007DC7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDE013B2C3664E1007DC7BA /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE27D2662C3793DD001FC9A1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		FE27D2682C379533001FC9A1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FEDE01342C3664E0007DC7BA /* Personal Expense Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Expense Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDE01372C3664E0007DC7BA /* Personal_Expense_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_Expense_TrackerApp.swift; sourceTree = "<group>"; };
 		FEDE01392C3664E0007DC7BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				FEDE01392C3664E0007DC7BA /* ContentView.swift */,
 				FEDE013B2C3664E1007DC7BA /* Assets.xcassets */,
 				FEDE01632C3665C8007DC7BA /* LoginView.swift */,
+				FE27D2662C3793DD001FC9A1 /* SignUpView.swift */,
+				FE27D2682C379533001FC9A1 /* MainView.swift */,
 				FEDE013D2C3664E1007DC7BA /* Preview Content */,
 			);
 			path = "Personal Expense Tracker";
@@ -260,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE27D2672C3793DD001FC9A1 /* SignUpView.swift in Sources */,
 				FEDE01642C3665C8007DC7BA /* LoginView.swift in Sources */,
 				FEDE013A2C3664E0007DC7BA /* ContentView.swift in Sources */,
+				FE27D2692C379533001FC9A1 /* MainView.swift in Sources */,
 				FEDE01382C3664E0007DC7BA /* Personal_Expense_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
