@@ -21,6 +21,7 @@ struct LoginView: View {
     @State private var showingAlert = false
     @State private var alertMessage = ""
     @Binding var showSignUp: Bool
+    @Binding var showForgotPassword: Bool
 
     var body: some View {
         VStack {
@@ -54,7 +55,7 @@ struct LoginView: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    // Forgot password action
+                    showForgotPassword = true
                 }) {
                     Text("Forgot?")
                         .font(.footnote)
@@ -110,6 +111,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(showSignUp: .constant(false))
+        LoginView(showSignUp: .constant(false), showForgotPassword: .constant(false))
     }
 }

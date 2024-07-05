@@ -9,13 +9,16 @@ import SwiftUI
 
 struct MainView: View {
     @State private var showSignUp = false
+    @State private var showForgotPassword = false
     
     var body: some View {
         NavigationView {
-            if showSignUp {
+            if showForgotPassword {
+                ForgotPasswordView(showForgotPassword: $showForgotPassword)
+            } else if showSignUp {
                 SignUpView(showSignUp: $showSignUp)
             } else {
-                LoginView(showSignUp: $showSignUp)
+                LoginView(showSignUp: $showSignUp, showForgotPassword: $showForgotPassword)
             }
         }
     }

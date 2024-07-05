@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-personalexpensetrack-dev-ff958-authRole",
+      "UnauthRoleArn": "arn:aws:iam::891377145240:role/amplify-personalexpensetrack-dev-ff958-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::891377145240:role/amplify-personalexpensetrack-dev-ff958-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-personalexpensetrack-dev-ff958-deployment",
+      "UnauthRoleName": "amplify-personalexpensetrack-dev-ff958-unauthRole",
+      "StackName": "amplify-personalexpensetrack-dev-ff958",
+      "StackId": "arn:aws:cloudformation:us-east-2:891377145240:stack/amplify-personalexpensetrack-dev-ff958/15b99110-3a8c-11ef-ac6e-0298cccd751f",
+      "AmplifyAppId": "d308obf8yl4449"
+    },
+    "categories": {
+      "auth": {
+        "personalexpensetrack0ffa56f9": {}
+      }
+    }
+  }
+}

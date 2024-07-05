@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23358F36DAF688D807538AB8 /* Pods_Personal_Expense_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533FBD96AC95CE65C89E68C1 /* Pods_Personal_Expense_TrackerTests.framework */; };
+		3D45EF1CE3F3433F2EB4A11E /* Pods_Personal_Expense_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BEDFB1CB087A0A46436066 /* Pods_Personal_Expense_Tracker.framework */; };
+		4E5D34705AF7EEB7A1615129 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E85B4974951CCE533DDC825 /* awsconfiguration.json */; };
+		6C4ABF9F72482771798C9EC1 /* Pods_Personal_Expense_Tracker_Personal_Expense_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C98AF8A679DA27FB7CE7A9 /* Pods_Personal_Expense_Tracker_Personal_Expense_TrackerUITests.framework */; };
+		BF50419A490CF910A76567CF /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D28B90A4E83A882340ECE622 /* amplifyconfiguration.json */; };
 		FE27D2672C3793DD001FC9A1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27D2662C3793DD001FC9A1 /* SignUpView.swift */; };
 		FE27D2692C379533001FC9A1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27D2682C379533001FC9A1 /* MainView.swift */; };
+		FE27D26D2C37AE88001FC9A1 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27D26C2C37AE88001FC9A1 /* ForgotPasswordView.swift */; };
+		FE78395F2C37D93100BFFAD2 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE78395E2C37D93100BFFAD2 /* ConfirmationView.swift */; };
 		FEDE01382C3664E0007DC7BA /* Personal_Expense_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDE01372C3664E0007DC7BA /* Personal_Expense_TrackerApp.swift */; };
 		FEDE013A2C3664E0007DC7BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDE01392C3664E0007DC7BA /* ContentView.swift */; };
 		FEDE013C2C3664E1007DC7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDE013B2C3664E1007DC7BA /* Assets.xcassets */; };
@@ -37,8 +44,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1757691636D6F3C2BAF94DD8 /* Pods-Personal Expense Tracker-Personal Expense TrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal Expense Tracker-Personal Expense TrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Personal Expense Tracker-Personal Expense TrackerUITests/Pods-Personal Expense Tracker-Personal Expense TrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2808F6AADDAF567D3C7D7306 /* Pods-Personal Expense TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal Expense TrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-Personal Expense TrackerTests/Pods-Personal Expense TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E85B4974951CCE533DDC825 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		3175F05B03379F899AD35E67 /* Pods-Personal Expense Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal Expense Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Personal Expense Tracker/Pods-Personal Expense Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		533FBD96AC95CE65C89E68C1 /* Pods_Personal_Expense_TrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personal_Expense_TrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C7D802CFC0A9B9EC89E032 /* Pods-Personal Expense TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal Expense TrackerTests.release.xcconfig"; path = "Target Support Files/Pods-Personal Expense TrackerTests/Pods-Personal Expense TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		84C98AF8A679DA27FB7CE7A9 /* Pods_Personal_Expense_Tracker_Personal_Expense_TrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personal_Expense_Tracker_Personal_Expense_TrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AE2CC51FB177F51E1514FF /* Pods-Personal Expense Tracker-Personal Expense TrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal Expense Tracker-Personal Expense TrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-Personal Expense Tracker-Personal Expense TrackerUITests/Pods-Personal Expense Tracker-Personal Expense TrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE5B45E0416242C50312EED3 /* Pods-Personal Expense Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal Expense Tracker.release.xcconfig"; path = "Target Support Files/Pods-Personal Expense Tracker/Pods-Personal Expense Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		C7BEDFB1CB087A0A46436066 /* Pods_Personal_Expense_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personal_Expense_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D28B90A4E83A882340ECE622 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		FE27D2662C3793DD001FC9A1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FE27D2682C379533001FC9A1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FE27D26C2C37AE88001FC9A1 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		FE78395E2C37D93100BFFAD2 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 		FEDE01342C3664E0007DC7BA /* Personal Expense Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Expense Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDE01372C3664E0007DC7BA /* Personal_Expense_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_Expense_TrackerApp.swift; sourceTree = "<group>"; };
 		FEDE01392C3664E0007DC7BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D45EF1CE3F3433F2EB4A11E /* Pods_Personal_Expense_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23358F36DAF688D807538AB8 /* Pods_Personal_Expense_TrackerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,12 +93,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C4ABF9F72482771798C9EC1 /* Pods_Personal_Expense_Tracker_Personal_Expense_TrackerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD6B789E08E58F024B375E3C /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				2E85B4974951CCE533DDC825 /* awsconfiguration.json */,
+				D28B90A4E83A882340ECE622 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+		E0391F297B7D5DBEC8954397 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3175F05B03379F899AD35E67 /* Pods-Personal Expense Tracker.debug.xcconfig */,
+				BE5B45E0416242C50312EED3 /* Pods-Personal Expense Tracker.release.xcconfig */,
+				1757691636D6F3C2BAF94DD8 /* Pods-Personal Expense Tracker-Personal Expense TrackerUITests.debug.xcconfig */,
+				A5AE2CC51FB177F51E1514FF /* Pods-Personal Expense Tracker-Personal Expense TrackerUITests.release.xcconfig */,
+				2808F6AADDAF567D3C7D7306 /* Pods-Personal Expense TrackerTests.debug.xcconfig */,
+				80C7D802CFC0A9B9EC89E032 /* Pods-Personal Expense TrackerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD8B8175C5B1AE717929BA5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7BEDFB1CB087A0A46436066 /* Pods_Personal_Expense_Tracker.framework */,
+				84C98AF8A679DA27FB7CE7A9 /* Pods_Personal_Expense_Tracker_Personal_Expense_TrackerUITests.framework */,
+				533FBD96AC95CE65C89E68C1 /* Pods_Personal_Expense_TrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FEDE012B2C3664E0007DC7BA = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +139,9 @@
 				FEDE01472C3664E1007DC7BA /* Personal Expense TrackerTests */,
 				FEDE01512C3664E1007DC7BA /* Personal Expense TrackerUITests */,
 				FEDE01352C3664E0007DC7BA /* Products */,
+				CD6B789E08E58F024B375E3C /* AmplifyConfig */,
+				E0391F297B7D5DBEC8954397 /* Pods */,
+				FD8B8175C5B1AE717929BA5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +164,8 @@
 				FEDE01632C3665C8007DC7BA /* LoginView.swift */,
 				FE27D2662C3793DD001FC9A1 /* SignUpView.swift */,
 				FE27D2682C379533001FC9A1 /* MainView.swift */,
+				FE27D26C2C37AE88001FC9A1 /* ForgotPasswordView.swift */,
+				FE78395E2C37D93100BFFAD2 /* ConfirmationView.swift */,
 				FEDE013D2C3664E1007DC7BA /* Preview Content */,
 			);
 			path = "Personal Expense Tracker";
@@ -143,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEDE01582C3664E1007DC7BA /* Build configuration list for PBXNativeTarget "Personal Expense Tracker" */;
 			buildPhases = (
+				00C12F07206C3117017A3B66 /* [CP] Check Pods Manifest.lock */,
 				FEDE01302C3664E0007DC7BA /* Sources */,
 				FEDE01312C3664E0007DC7BA /* Frameworks */,
 				FEDE01322C3664E0007DC7BA /* Resources */,
+				3203C3E5F895249CCD725FC7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEDE015B2C3664E1007DC7BA /* Build configuration list for PBXNativeTarget "Personal Expense TrackerTests" */;
 			buildPhases = (
+				F064CEB780BCF3A6B287540D /* [CP] Check Pods Manifest.lock */,
 				FEDE01402C3664E1007DC7BA /* Sources */,
 				FEDE01412C3664E1007DC7BA /* Frameworks */,
 				FEDE01422C3664E1007DC7BA /* Resources */,
@@ -178,9 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEDE015E2C3664E1007DC7BA /* Build configuration list for PBXNativeTarget "Personal Expense TrackerUITests" */;
 			buildPhases = (
+				E62D51F4458E8A38AA3F9D5B /* [CP] Check Pods Manifest.lock */,
 				FEDE014A2C3664E1007DC7BA /* Sources */,
 				FEDE014B2C3664E1007DC7BA /* Frameworks */,
 				FEDE014C2C3664E1007DC7BA /* Resources */,
+				C3A8B99F0204E31FF0F1B61F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,6 +307,8 @@
 			files = (
 				FEDE013F2C3664E1007DC7BA /* Preview Assets.xcassets in Resources */,
 				FEDE013C2C3664E1007DC7BA /* Assets.xcassets in Resources */,
+				4E5D34705AF7EEB7A1615129 /* awsconfiguration.json in Resources */,
+				BF50419A490CF910A76567CF /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +328,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00C12F07206C3117017A3B66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Personal Expense Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3203C3E5F895249CCD725FC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Personal Expense Tracker/Pods-Personal Expense Tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Personal Expense Tracker/Pods-Personal Expense Tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Personal Expense Tracker/Pods-Personal Expense Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3A8B99F0204E31FF0F1B61F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Personal Expense Tracker-Personal Expense TrackerUITests/Pods-Personal Expense Tracker-Personal Expense TrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Personal Expense Tracker-Personal Expense TrackerUITests/Pods-Personal Expense Tracker-Personal Expense TrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Personal Expense Tracker-Personal Expense TrackerUITests/Pods-Personal Expense Tracker-Personal Expense TrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E62D51F4458E8A38AA3F9D5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Personal Expense Tracker-Personal Expense TrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F064CEB780BCF3A6B287540D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Personal Expense TrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FEDE01302C3664E0007DC7BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,8 +438,10 @@
 			files = (
 				FE27D2672C3793DD001FC9A1 /* SignUpView.swift in Sources */,
 				FEDE01642C3665C8007DC7BA /* LoginView.swift in Sources */,
+				FE78395F2C37D93100BFFAD2 /* ConfirmationView.swift in Sources */,
 				FEDE013A2C3664E0007DC7BA /* ContentView.swift in Sources */,
 				FE27D2692C379533001FC9A1 /* MainView.swift in Sources */,
+				FE27D26D2C37AE88001FC9A1 /* ForgotPasswordView.swift in Sources */,
 				FEDE01382C3664E0007DC7BA /* Personal_Expense_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +600,7 @@
 		};
 		FEDE01592C3664E1007DC7BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3175F05B03379F899AD35E67 /* Pods-Personal Expense Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +609,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Personal Expense Tracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 5LQ3JA9XXB;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -457,6 +631,7 @@
 		};
 		FEDE015A2C3664E1007DC7BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5B45E0416242C50312EED3 /* Pods-Personal Expense Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,6 +640,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Personal Expense Tracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 5LQ3JA9XXB;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -486,6 +662,7 @@
 		};
 		FEDE015C2C3664E1007DC7BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2808F6AADDAF567D3C7D7306 /* Pods-Personal Expense TrackerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +683,7 @@
 		};
 		FEDE015D2C3664E1007DC7BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C7D802CFC0A9B9EC89E032 /* Pods-Personal Expense TrackerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,11 +704,13 @@
 		};
 		FEDE015F2C3664E1007DC7BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1757691636D6F3C2BAF94DD8 /* Pods-Personal Expense Tracker-Personal Expense TrackerUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5LQ3JA9XXB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ashmit-Gupta.Personal-Expense-TrackerUITests";
@@ -544,11 +724,13 @@
 		};
 		FEDE01602C3664E1007DC7BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5AE2CC51FB177F51E1514FF /* Pods-Personal Expense Tracker-Personal Expense TrackerUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5LQ3JA9XXB;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ashmit-Gupta.Personal-Expense-TrackerUITests";

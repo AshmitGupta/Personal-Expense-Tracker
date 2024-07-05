@@ -6,12 +6,28 @@
 //
 
 import SwiftUI
+import Amplify
+import AmplifyPlugins
 
 @main
-struct Personal_Expense_TrackerApp: App {
+struct PersonalExpenseTrackerApp: App {
+    init() {
+        configureAmplify()
+    }
+
     var body: some Scene {
         WindowGroup {
             MainView()
+        }
+    }
+
+    private func configureAmplify() {
+        do {
+            try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try Amplify.configure()
+            print("Amplify configured with auth plugin")
+        } catch {
+            print("An error occurred setting up Amplify: \(error)")
         }
     }
 }

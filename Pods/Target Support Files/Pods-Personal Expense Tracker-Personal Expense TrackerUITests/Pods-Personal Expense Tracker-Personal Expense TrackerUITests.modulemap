@@ -1,0 +1,6 @@
+framework module Pods_Personal_Expense_Tracker_Personal_Expense_TrackerUITests {
+  umbrella header "Pods-Personal Expense Tracker-Personal Expense TrackerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

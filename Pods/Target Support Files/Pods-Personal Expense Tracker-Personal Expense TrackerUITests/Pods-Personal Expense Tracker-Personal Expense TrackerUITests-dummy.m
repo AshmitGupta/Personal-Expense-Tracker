@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Personal_Expense_Tracker_Personal_Expense_TrackerUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Personal_Expense_Tracker_Personal_Expense_TrackerUITests
+@end
