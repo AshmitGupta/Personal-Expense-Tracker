@@ -10,15 +10,23 @@ import SwiftUI
 struct MainView: View {
     @State private var showSignUp = false
     @State private var showForgotPassword = false
-    
+    @State private var isLoggedIn = false
+    @State private var loggedInUsername: String = ""
+
     var body: some View {
-        NavigationView {
-            if showForgotPassword {
-                ForgotPasswordView(showForgotPassword: $showForgotPassword)
-            } else if showSignUp {
-                SignUpView(showSignUp: $showSignUp)
+        NavigationStack {
+            if isLoggedIn {
+                HomeView(username: loggedInUsername)
             } else {
-                LoginView(showSignUp: $showSignUp, showForgotPassword: $showForgotPassword)
+                VStack {
+                    if showForgotPassword {
+                        ForgotPasswordView(showForgotPassword: $showForgotPassword)
+                    } else if showSignUp {
+                        SignUpView(showSignUp: $showSignUp)
+                    } else {
+                        LoginView(showSignUp: $showSignUp, showForgotPassword: $showForgotPassword, isLoggedIn: $isLoggedIn, loggedInUsername: $loggedInUsername)
+                    }
+                }
             }
         }
     }

@@ -61,9 +61,16 @@ struct ConfirmationView: View {
                 showingAlert = true
                 showSignUp = false
             case .failure(let error):
-                print("Confirmation failed: \(error)")
-                alertMessage = "Confirmation failed: \(error.localizedDescription)"
-                showingAlert = true
+                if case .service(_, let errorMessage, _) = error,
+                   errorMessage.contains("Current status is CONFIRMED") {
+                    alertMessage = "User is already confirmed. You can log in."
+                    showingAlert = true
+                    showSignUp = false
+                } else {
+                    print("Confirmation failed: \(error)")
+                    alertMessage = "Confirmation failed: \(error.localizedDescription)"
+                    showingAlert = true
+                }
             }
         }
     }

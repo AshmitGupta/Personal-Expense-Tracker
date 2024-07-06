@@ -13,44 +13,40 @@
 //
 
 import SwiftUI
-import UIKit
+import Amplify
 
 struct LoginView: View {
-    @State private var username: String = ""
+    @State private var enteredUsername: String = ""
     @State private var password: String = ""
     @State private var showingAlert = false
     @State private var alertMessage = ""
     @Binding var showSignUp: Bool
     @Binding var showForgotPassword: Bool
+    @Binding var isLoggedIn: Bool
+    @Binding var loggedInUsername: String
 
     var body: some View {
         VStack {
             Spacer()
 
-            VStack(alignment: .center) {
-                Text("Personal Expense Tracker")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding(.bottom, 2)
-                    .multilineTextAlignment(.center)
-                    .padding(.bottom, 30)
-            }
-            .padding(.horizontal)
+            Text("Personal Expense Tracker")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding(.bottom, 40)
+                .multilineTextAlignment(.center)
 
-            HStack {
-                TextField("Email", text: $username)
-                    .padding()
-                    .background(Color(UIColor.secondarySystemBackground))
-                    .cornerRadius(5.0)
-            }
+            TextField("Username", text: $enteredUsername)
+                .padding()
+                .background(Color(UIColor.secondarySystemBackground))
+                .cornerRadius(5.0)
+                .padding(.horizontal)
 
-            HStack {
-                SecureField("Password", text: $password)
-                    .padding()
-                    .background(Color(UIColor.secondarySystemBackground))
-                    .cornerRadius(5.0)
-            }
-            .padding(.bottom, 10)
+            SecureField("Password", text: $password)
+                .padding()
+                .background(Color(UIColor.secondarySystemBackground))
+                .cornerRadius(5.0)
+                .padding(.horizontal)
+                .padding(.bottom, 10)
 
             HStack {
                 Spacer()
@@ -65,7 +61,7 @@ struct LoginView: View {
             }
 
             Button(action: {
-                authenticateUser()
+                logOutUserIfNeeded()
             }) {
                 Text("LOGIN")
                     .font(.headline)
@@ -83,7 +79,7 @@ struct LoginView: View {
             Spacer()
 
             HStack {
-                Text("Don’t have an account?")
+                Text("Don't have an account?")
                     .font(.footnote)
                     .foregroundColor(.gray)
                 Button(action: {
@@ -99,18 +95,77 @@ struct LoginView: View {
         .padding()
     }
 
-    private func authenticateUser() {
-        if username.isEmpty || password.isEmpty {
-            alertMessage = "Please enter both username and password."
-            showingAlert = true
-        } else {
-            print("Authenticating user \(username)")
+    private func logOutUserIfNeeded() {
+        Amplify.Auth.fetchAuthSession { result in
+            switch result {
+            case .success(let session):
+                if session.isSignedIn {
+                    Amplify.Auth.signOut { signOutResult in
+                        switch signOutResult {
+                        case .success:
+                            print("Successfully signed out")
+                            loginUser()
+                        case .failure(let error):
+                            alertMessage = "Sign out failed: \(error.localizedDescription)"
+                            showingAlert = true
+                            print("Sign out failed: \(error.localizedDescription)")
+                        }
+                    }
+                } else {
+                    loginUser()
+                }
+            case .failure(let error):
+                alertMessage = "Failed to fetch auth session: \(error.localizedDescription)"
+                showingAlert = true
+                print("Failed to fetch auth session: \(error.localizedDescription)")
+            }
+        }
+    }
+
+    private func loginUser() {
+        Amplify.Auth.signIn(username: enteredUsername, password: password) { result in
+            switch result {
+            case .success(let signInResult):
+                switch signInResult.nextStep {
+                case .done:
+                    print("Sign in succeeded")
+                    fetchUserAttributes()
+                default:
+                    alertMessage = "Sign in next step: \(signInResult.nextStep)"
+                    showingAlert = true
+                    print("Sign in next step: \(signInResult.nextStep)")
+                }
+            case .failure(let error):
+                alertMessage = "Sign in failed: \(error.localizedDescription)"
+                showingAlert = true
+                print("Sign in failed: \(error.localizedDescription)")
+                print("Error details: \(error)")
+            }
+        }
+    }
+
+    private func fetchUserAttributes() {
+        Amplify.Auth.fetchUserAttributes { result in
+            switch result {
+            case .success(let attributes):
+                if let customUsernameAttr = attributes.first(where: { $0.key.rawValue == "custom:username" }) {
+                    loggedInUsername = customUsernameAttr.value
+                    isLoggedIn = true
+                } else {
+                    alertMessage = "Failed to fetch username attribute"
+                    showingAlert = true
+                }
+            case .failure(let error):
+                alertMessage = "Failed to fetch user attributes: \(error.localizedDescription)"
+                showingAlert = true
+                print("Failed to fetch user attributes: \(error.localizedDescription)")
+            }
         }
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(showSignUp: .constant(false), showForgotPassword: .constant(false))
+        LoginView(showSignUp: .constant(false), showForgotPassword: .constant(false), isLoggedIn: .constant(false), loggedInUsername: .constant(""))
     }
 }
